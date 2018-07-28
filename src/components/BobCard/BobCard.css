@@ -1,0 +1,22 @@
+button {
+  margin-bottom: 25px;
+}
+button > .img-thumbnail {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px 1px 3px 1px;
+}
+.img-thumbnail > img {
+  width: 300px;
+}
+
+.grow:hover
+{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px  rgba(45, 44, 43, 0.5);
+}
+
+
