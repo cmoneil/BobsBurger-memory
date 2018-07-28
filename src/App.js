@@ -67,7 +67,7 @@ class App extends Component {
         score ={this.state.score} highScore={this.state.highScore}
         />
         <Container>
-        {shuffledBobs.slice(5).map(bobs => (
+        {shuffledBobs.slice(2).map(bobs => (
           <BobCard
             handleClick={this.handleIncrement}
             id={bobs.id}

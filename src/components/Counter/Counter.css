@@ -1,0 +1,17 @@
+/* .jumbotron {
+    background-image: url(./bobsheader.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: #ffffff;
+}
+
+h3 {
+    background-color: rgb(185,193,193, .5);
+    
+} */
+
+.jumbotron{
+    background-color: rgb(185,193,193, .9);
+    color: #ffffff;
+}

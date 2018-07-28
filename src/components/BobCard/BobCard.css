@@ -1,14 +1,17 @@
 button {
   margin-bottom: 25px;
 }
+.btn {
+  padding: 0px 3px;
+}
 button > .img-thumbnail {
   height: 60%;
   overflow: hidden;
   text-align: center;
-  padding: 5px 1px 3px 1px;
+  padding: 3px 1px 3px 1px;
 }
 .img-thumbnail > img {
-  width: 300px;
+  width: 200px;
 }
 
 .grow:hover
