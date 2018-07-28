@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'bobs_burgers_2regular';
-    src: url('/css/bobs-webfont.woff2') format('woff2'),
-         url('/css/bobs-webfont.woff') format('woff');
+    src: url('bobs-webfont.woff2') format('woff2'),
+         url('bobs-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'bobs_burgers_2regular';
-    src: url('/css/bobs2-webfont.woff2') format('woff2'),
-         url('/css/bobs2-webfont.woff') format('woff');
+    src: url('bobs2-webfont.woff2') format('woff2'),
+         url('bobs2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -25,5 +25,5 @@ body {
     background-position: center top;
     
 
-    
+
 }
