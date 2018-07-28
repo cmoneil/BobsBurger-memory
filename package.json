@@ -5,6 +5,7 @@
   "homepage": "https://cmoneil.github.io/BobsBurger-memory",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "npm": "^6.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
