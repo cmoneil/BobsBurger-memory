@@ -1,14 +1,27 @@
+
 @font-face {
-    font-family: "bobs";
-    src: url("bobs.ttf") format("truetype");
-    src: url("bobs2.ttf") format("truetype");
+    font-family: 'bobs_burgers_2regular';
+    src: url('/css/bobs-webfont.woff2') format('woff2'),
+         url('/css/bobs-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+@font-face {
+    font-family: 'bobs_burgers_2regular';
+    src: url('/css/bobs2-webfont.woff2') format('woff2'),
+         url('/css/bobs2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
-    font-family: "bobs";
     background-image: url(../images/bobsheader.png);
     background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: center-top;
+    background-size: 140%;
+    background-position: center top;
     
 }
