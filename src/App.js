@@ -7,12 +7,12 @@ import bobs from "./bobs.json";
 import "./App.css";
 
 
-const shuffleArray = ( arr ) => bobs.sort(() => Math.random() - 0.5);
+const shuffleArray = (arr) => bobs.sort(() => Math.random() - 0.5);
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    
+
     score: 0,
     highScore: 0,
     clickedItem: []
@@ -20,41 +20,46 @@ class App extends Component {
   handleIncrement = id => {
 
     //Push each clicked item into array to then check if clicked
-    let clickedItemArr =this.state.clickedItem.concat(id);
-    this.setState({clickedItem: clickedItemArr})
+    let clickedItemArr = this.state.clickedItem.concat(id);
+    this.setState({ clickedItem: clickedItemArr })
     console.log(this.state.clickedItem)
-    
+
     let clickResult = this.state.clickedItem.includes(id)
     console.log(clickResult);
-    if (clickResult === true){
+    if (clickResult === true) {
       console.log("true");
       alert("Already Clicked!");
       this.setState({
         score: 0,
         clickedItem: []
-    })
-    }
-    else{
-      let newScore = this.state.score +1
-    let newTopScore;
-    if (newScore> this.state.highScore){ 
-      newTopScore = newScore
-    
-
-    this.setState({
-      highScore: newTopScore,
-      score: newScore
-    })}
-    else{
-      this.setState({
-        score: newScore
       })
-    };
+    }
+    else {
+      let newScore = this.state.score + 1
+      let newTopScore;
+      if (newScore === 13){
+        alert("You did it! You got them all!")
+        this.setState({
+          score: 0
+        })
+      }
+      if (newScore > this.state.highScore) {
+        newTopScore = newScore
+        this.setState({
+          highScore: newTopScore,
+          score: newScore
+        })
+      }
+      else {
+        this.setState({
+          score: newScore
+        })
+      };
 
     }
-    
 
-  
+
+
     console.log(id);
   };
 
@@ -64,19 +69,19 @@ class App extends Component {
     return (
       <Wrapper>
         <Counter
-        score ={this.state.score} highScore={this.state.highScore}
+          score={this.state.score} highScore={this.state.highScore}
         />
         <Container>
-        {shuffledBobs.slice(2).map(bobs => (
-          <BobCard
-            handleClick={this.handleIncrement}
-            id={bobs.id}
-            key={bobs.id}
-            image={bobs.image}
-            
-          />
-        ))
-        }
+          {shuffledBobs.slice(1).map(bobs => (
+            <BobCard
+              handleClick={this.handleIncrement}
+              id={bobs.id}
+              key={bobs.id}
+              image={bobs.image}
+
+            />
+          ))
+          }
         </Container>
       </Wrapper>
     );
