@@ -40,8 +40,10 @@ class App extends Component {
       if (newScore === 13){
         alert("You did it! You got them all!")
         this.setState({
-          score: 0
+          score: 0,
+          highScore: 13
         })
+        return;
       }
       if (newScore > this.state.highScore) {
         newTopScore = newScore
